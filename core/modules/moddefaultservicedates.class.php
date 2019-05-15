@@ -345,9 +345,9 @@ class moddefaultservicedates extends DolibarrModules
 	{
 		$sql = array();
 		
-		define('INC_FROM_DOLIBARR',true);
+		// define('INC_FROM_DOLIBARR',true);
 
-		require dol_buildpath('/defaultservicedates/script/create-maj-base.php');
+		// require dol_buildpath('/defaultservicedates/script/create-maj-base.php');
 
 		$result=$this->_load_tables('/defaultservicedates/sql/');
 
