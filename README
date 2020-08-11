@@ -19,4 +19,4 @@
 
 Dolibarr module that can fill a new service line's dates from the last one.
 
-This behaviour has been pushed to Dolibarr 11.0, using hidden const 'MAIN_PREFILL_SERVICE_DATES_FROM_LAST_LINE'.
+This behaviour has been pushed to Dolibarr 11.0, using hidden const 'MAIN_FILL_SERVICE_DATES_FROM_LAST_SERVICE_LINE'.
