@@ -64,8 +64,8 @@ class Actionsdefaultservicedates
 	{
         global $conf;
 
-	    // This behaviour will be standard in Dolibarr 11 : don't handle it then
-		if((float) DOL_VERSION < 11 && ! empty($conf->service->enabled) && $this->_contextIsHandled($parameters) && ! empty($object->lines))
+	    // This behaviour will be standard in Dolibarr 13 : don't handle it then, show PR #11179
+		if((float) DOL_VERSION < 13 && ! empty($conf->service->enabled) && $this->_contextIsHandled($parameters) && ! empty($object->lines))
 		{
 			$date_start=dol_mktime(GETPOST('date_starthour'), GETPOST('date_startmin'), 0, GETPOST('date_startmonth'), GETPOST('date_startday'), GETPOST('date_startyear'));
 			$date_end=dol_mktime(GETPOST('date_starthour'), GETPOST('date_startmin'), 0, GETPOST('date_endmonth'), GETPOST('date_endday'), GETPOST('date_endyear'));
